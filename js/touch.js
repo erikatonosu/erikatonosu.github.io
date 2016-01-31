@@ -1,11 +1,14 @@
+// スマホ画面のタッチを認識するイベント-----------------
+// タッチ後に緯度経度を読み込むイベント-----------------
+
+
 // DOMロード
 $(function(){
 
-// 緯度
+// 緯度・経度
 var lon;
 var lat;
 
-// 経度
 
     //GPS
     navigator.geolocation.getCurrentPosition(function(evt){
