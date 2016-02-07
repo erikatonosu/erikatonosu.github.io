@@ -33,7 +33,11 @@ $(function(){
         tomato.x = 100;
         tomato.y = 100;
         stage.addChild(tomato);
-    }
+
+        // ステージの更新
+        stage.update();
+
+    };
 
 
 
