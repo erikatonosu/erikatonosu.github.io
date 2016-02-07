@@ -16,11 +16,16 @@ $(function(){
             url:url,
             dataType:'json'
         }).done(function(data){
+            console.log(data);
 
         }).fail(function(){
             console.log('ajax error!!!');
         });
 
+        // htmlに表示する関数
+        function showWeather(data){
+
+        }
 
 
     });
