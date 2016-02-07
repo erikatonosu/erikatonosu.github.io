@@ -35,7 +35,11 @@ $(function(){
             // 気温
             var areaTemp = data.main.temp; //華氏
             areaTemp = areaTemp - 273.15;
-            $('#areaTemp').text(areaTemp + '度');
+            $('#areaTemp').text(Math.round(areaTemp) + '度'); //Math.round()でくくって切り捨て
+
+            // 湿度
+            var areaHumidity = data.main.humidity;
+            $('#areaHumidity').text(areaHumidity + '%');
 
 
         }
