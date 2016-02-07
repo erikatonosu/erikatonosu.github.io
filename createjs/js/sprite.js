@@ -60,7 +60,7 @@ $(function(){
         iron.x = 150;
         iron.y = 800;
         iron.alpha = 0;
-        createjs.Tween.get(ironSprite).to({alpha:1},500).wait(1000).to({x:500},4000);
+        createjs.Tween.get(ironSprite).to({alpha:1},500).wait(1000).call(ironWalk).to({x:500},4000).call(ironStand);
 
         function ironWalk(){
             iron.gotoAndPlay('walk');
