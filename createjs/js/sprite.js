@@ -42,34 +42,21 @@ $(function(){
         createjs.Tween.get(vitaminC).to({alpha:1},500).wait(1000).to({x:500},4000);
 
 
-
-
-
-
         // ステージの更新
         stage.update();
 
     };
-
-
 
     // フレームレート
     createjs.Ticker.setFPS(30);
     // requestAnimationFrameの設定
     createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
 
-
     // アニメーションの設定
     // ticker = 繰り返しまわす
     createjs.Ticker.addEventListener('tick', function(){
         // ステージの更新
         stage.update();
-
-
     });
-
-
-
-
 
 });
