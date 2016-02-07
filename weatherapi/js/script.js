@@ -47,7 +47,7 @@ $(function(){
 
             // 天気アイコン
             var weatherIcon = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
-            $('#weeatherIcon').append('<img src="'+ weatherIcon +'">');
+            $('#weatherIcon').append('<img src="'+ weatherIcon +'">');
 
 
         }
