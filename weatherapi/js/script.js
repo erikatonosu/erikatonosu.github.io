@@ -35,11 +35,19 @@ $(function(){
             // 気温
             var areaTemp = data.main.temp; //華氏
             areaTemp = areaTemp - 273.15;
-            $('#areaTemp').text(Math.round(areaTemp) + '度'); //Math.round()でくくって切り捨て
+            $('#areaTemp').text(Math.round(areaTemp) + '度'); //Math.round()でくくって小数点以下切り捨て
 
             // 湿度
             var areaHumidity = data.main.humidity;
             $('#areaHumidity').text(areaHumidity + '%');
+
+            // 天気
+            var areaWeather = data.weather[0].description;
+            $('#areaWeather').text(areaWeather);
+
+            // 天気アイコン
+            var weatherIcon = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
+            $('#weeatherIcon').append('<img src="'+ weatherIcon +'">');
 
 
         }
