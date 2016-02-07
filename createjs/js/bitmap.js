@@ -23,10 +23,7 @@ $(function(){
 
     loadQueue.addEventListener('complete',function(){
         console.log('読み込み完了！！！');
-
-        showVege(){
-
-        }
+        showVege();
 
     });
 
