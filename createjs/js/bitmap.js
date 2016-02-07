@@ -1,4 +1,4 @@
-// 先読みするリスト
+// 先読みするリスト(画像などを先に読ませておく)
 var manifest = [
     {src:'img/tomato.png'},
     {src:'img/pumpkin.png'},
@@ -23,8 +23,12 @@ $(function(){
 
     loadQueue.addEventListener('complete',function(){
         console.log('読み込み完了！！！');
-        showVege();
+        showVege();  // 画像の読み込みが完了したら表示する
 
+    });
+
+    loadQueue.addEventListener('progress',function(evt){
+        console.log(evt.progress); // 読み込み状況を0〜1で表示
     });
 
 
@@ -35,8 +39,8 @@ $(function(){
         stage.addChild(tomato);
 
         var pumpkin = new createjs.Bitmap(manifest[1].src);
-        pumpkin.x = 150;
-        pumpkin.y = 150;
+        pumpkin.x = 200;
+        pumpkin.y = 200;
         stage.addChild(pumpkin);
 
         // ステージの更新
@@ -48,6 +52,7 @@ $(function(){
 
     // フレームレート
     createjs.Ticker.setFPS(30);
+    // requestAnimationFrameの設定
     createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
 
 
