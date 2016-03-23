@@ -1,0 +1,397 @@
+/* 1.font */
+body{
+    font-family: "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* 2.link color */
+a:link{
+    color:#FFF;
+    text-decoration: none;
+}
+a:visited{
+    color:#FFF;
+}
+/*fffb88*/
+
+a:hover{
+    color:#ff88c3;
+}
+
+#kyoukai1{
+    z-index: 5;
+    margin-top: 700px;
+    position: absolute;
+    top:-70px;
+    width: 100%;
+    height: auto;
+}
+#kyoukai2{
+    z-index: 5;
+    margin-top: 1430px;
+    position: absolute;
+    top:-70px;
+    width: 100%;
+    height: auto;
+}
+#kyoukai3{
+    z-index: 5;
+    margin-top: 2130px;
+    position: absolute;
+    top:-70px;
+    width: 100%;
+    height: auto;
+}
+#kyoukai4{
+    z-index: 5;
+    margin-top: 2830px;
+    position: absolute;
+    top:-70px;
+    width: 100%;
+    height: auto;
+}
+#kyoukai5{
+    z-index: 5;
+    margin-top: 3530px;
+    position: absolute;
+    top:-70px;
+    width: 100%;
+    height: auto;
+}
+
+#noTop{
+    overflow: hidden;
+}
+
+
+
+
+/* 3. main layout */
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #7d7bd1;
+    /*headerの固定部分--------------*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    /*----------------------------*/
+
+    display: none;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+header ul{
+    overflow: hidden;
+    float: right;
+    padding-top: 20px;
+}
+
+header ul li{
+    float: left;
+    margin-right: 60px;
+}
+header ul li:last-child{
+    float: left;
+    margin-right: 0;
+}
+header h1{
+    float: left;
+
+    margin-top: 10px;
+}
+
+/*header li a{
+    color: #FFF;
+    text-decoration: none;
+}*/
+
+header ul li a:link{
+    text-decoration: none;
+}
+
+#top{
+    width: 100%;
+    height: 720px;
+    padding-top: 0px;
+    background-image: radial-gradient(#FFF 10%, transparent 20%), radial-gradient(#FFF 10%, transparent 20%);
+    background-size: 6px 6px;
+    background-position: 0 0, 15px 15px;
+    /*background-color: #999;*/
+    /*margin-top: 70px;*/
+    position: absolute;
+    overflow: hidden;
+    z-index: 4;
+}
+#topNav{
+    width: 100%;
+    height: 70px;
+    /*background-color: #7d7bd1;*/
+    text-decoration: none;
+    position: absolute;
+    z-index: 4;
+}
+#topNav img{
+    margin-top: 18px;
+}
+#topNav ul{
+    width: 800px;
+    height: 35px;
+    float: right;
+    margin-top: 20px;
+}
+#topNav ul li{
+    float: right;
+    margin-right: 60px;
+    /*margin-top: 21px;*/
+}
+
+#topmov{
+    width: 100%;
+    height: 720px;
+    z-index: 3;
+    /*background-color: #999;
+    background-image: radial-gradient(#FFF 20%, transparent 20%);
+    background-size: 6px 6px;*/
+
+}
+#topLogo img{
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    margin-left: -220px;
+    z-index: 4;
+}
+/*#dots{
+    position: absolute;
+    width: auto;
+    height: 720px;
+    z-index: 3;
+    top: 0px;
+}*/
+video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 1280px;
+    height: 720px;
+    z-index: 2;
+}
+
+
+/*p{
+    font-family: serif;
+    color: #fff;
+    font-size: 400%;
+    margin: 50px;
+    position: relative;
+    z-index: 2;
+}*/
+
+    /*body{
+        background: #000;
+    }*/
+
+#wrapper{
+    /*position: absolute;
+    background: url(../img/sabon.png) center center no-repeat;
+    background-size: 100% auto;
+    z-index: 3*/
+    position: absolute;
+    z-index: 4;
+}
+
+#about{
+    width: 100%;
+    height: 720px;
+    background: url(../img/sabon1.png) center center no-repeat;
+    background-size: 100% auto;
+    background-color: #fdb9ff;
+}
+#about h1{
+    padding-top: 170px;
+    font-size: 23pt;
+    color: #FFF;
+    text-align: center;
+}
+#pcImage{
+    width: 395px;
+    float: left;
+    margin-top: 20px;
+}
+#aboutText{
+    overflow: hidden;
+    width: 250px;
+    float: left;
+    text-align: left;
+    color: #FFF;
+    line-height: 1.7;
+    margin-top: 50px;
+}
+#playImage{
+    overflow: hidden;
+    width: 221px;
+    float: right;
+    margin-top: 60px;
+}
+#text1{
+    margin-bottom: 30px;
+}
+
+
+#howtoplay{
+    width: 100%;
+    height: 720px;
+    background: url(../img/sabon2.png) center center no-repeat;
+    background-size: 100% auto;
+    background-color: #e1b9ff;
+}
+#howtoplay h1{
+    padding-top: 170px;
+    font-size: 23pt;
+    color: #FFF;
+    text-align: center;
+}
+#howtoplayImages{
+    width: 425px;
+    float: left;
+    margin-top: 10px;
+}
+#image1{
+    width: 290px;
+    margin-bottom: 30px;
+}
+#image2{
+    width: 290px;
+    margin-bottom: 30px;
+    float: right;
+}
+#howtoplayText{
+    overflow: hidden;
+    width: 450px;
+    float: left;
+    line-height: 1.7;
+    text-align: left;
+    color: #FFF;
+    margin-top: 50px;
+}
+#text3{
+    margin-bottom: 30px;
+}
+#text4{
+    margin-bottom: 30px;
+}
+
+
+#share{
+    width: 100%;
+    height: 720px;
+    background: url(../img/sabon3.png) center center no-repeat;
+    background-size: 100% auto;
+    background-color: #b9beff;
+}
+#share h1{
+    padding-top: 170px;
+    font-size: 23pt;
+    color: #FFF;
+    text-align: center;
+}
+#shareRight{
+    width: 460px;
+    float: left;
+    text-align: left;
+    color: #FFF;
+    line-height: 1.7;
+    margin-top: 50px;
+}
+#text6{
+    margin-bottom: 30px;
+}
+#shareText{
+    overflow: hidden;
+    width: 290px;
+    float: left;
+    text-align: left;
+    color: #FFF;
+    line-height: 1.7;
+    margin-top: 50px;
+    margin-right: 45px;
+}
+
+#download{
+    width: 100%;
+    height: 700px;
+    background: url(../img/sabon4.png) center center no-repeat;
+    background-size: 100% auto;
+    background-color: #b9d7ff;
+}
+#download h1{
+    padding-top: 170px;
+    font-size: 23pt;
+    color: #FFF;
+    text-align: center;
+}
+#iconImage{
+    width: 180px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 150px;
+}
+#AppInfo{
+    width: 330px;
+    float: left;
+}
+#appname{
+    overflow: hidden;
+    width: 200px;
+    color: #FFF;
+    float: left;
+    margin-top: 50px;
+}
+#downloadText{
+    overflow: hidden;
+    width: 280px;
+    font-size: 12pt;
+    float: left;
+    text-align: left;
+    color: #FFF;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+#DLbtn{
+    width: 230px;
+    float: left;
+    margin-top: 50px;
+}
+
+
+footer{
+    width: 100%;
+    height: 130px;
+    padding-top: 15px;
+    background-color: #b9ffbe;
+}
+#copyright{
+    text-align: center;
+    font-size: 12pt;
+    color: #ff88c3;
+    margin-top: 60px;
+    letter-spacing: 0.2em;
+}
+
+
+.pagetop{
+    width: 200px;
+    float: right;
+}
