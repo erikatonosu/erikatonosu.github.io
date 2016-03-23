@@ -1,0 +1,499 @@
+/* 1.font */
+body{
+    font-family: "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a:link{
+    color: #6d5fd8;
+    text-decoration: none;
+}
+a:hover{
+    color: #f6b73f;
+}
+a:visited{
+    color: #9e3ff6;
+}
+
+header{
+    width: 100%;
+    height: 67px;
+    background-color: #121212;
+    /*headerの固定部分--------*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    /*----------------------*/
+    /*margin: 0 auto;*/
+    overflow: hidden;
+}
+
+header ul{
+    overflow: hidden;
+}
+
+#toplogo{
+    width: 111px;
+    float: left;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    width: 665px;
+    height: 34px;
+    float: left;
+    padding-top: 21px;
+    overflow: hidden;
+}
+.inner{
+    width: 665px;
+    /*margin: 25px auto 25px;*/
+    overflow: hidden;
+}
+nav ul{
+    overflow: hidden;
+}
+nav li{
+    /*width: 150px;*/
+    height: 34px;
+    padding-left: 30px;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+}
+
+nav li a:link span,
+nav li a:visited span{
+  font-size: 15px;
+  /*position: absolute;*/
+  left:0;
+  bottom:10px;
+  width: 60px;
+  height: 15px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+#topRight{
+    width: 218px;
+    height: 67px;
+    float: left;
+    color: #b2b2b2;
+    font-size: 10px;
+    padding-left: 21px;
+}
+#language{
+    width: 60px;
+    height: 12px;
+    padding-top: 20px;
+    float: left;
+
+}
+#language h3{
+    width: 46px;
+    float: left;
+    padding-top: 6px;
+}
+#language p{
+    width: 5px;
+    float: right;
+    padding-top: 13px;
+}
+#reservationbtn{
+    width: 128px;
+    float: right;
+    padding-top: 16px;
+}
+
+#mainvisual{
+    width: 100%;
+    height: 465px;
+    padding-top: 67px;
+    background: url(../images/mainvisual.png) center center no-repeat;
+    background-size: cover;
+}
+#topCatch{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 360px;
+}
+#topLogoImg{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 840px;
+}
+
+.container{
+    width: 1015px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#infomation{
+    width: 713px;
+    height: 146px;
+    float: left;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    margin-top: 12px;
+    position: relative;
+}
+#infoTitle{
+    width: 620px;
+    height: 15px;
+    padding: 9px 10px;
+    margin-left: 34px;
+    border-bottom: 2px solid #999;
+}
+#infoTitle h2{
+    width: 189.5px;
+    height: 13.5px;
+    float: left;
+}
+#showAll{
+    width: 85px;
+    float: right;
+}
+#rightArrow{
+    width: 8px;
+    float: right;
+    padding-top: 4px;
+}
+.news{
+    width: 590px;
+    height: 23px;
+    padding: 12px 10px;
+    margin-left: 35px;
+    border-bottom: 1px dotted #999;
+}
+.news dl dt{
+    /*width: 120px;*/
+    float: left;
+
+}
+.news dl dd{
+    /*width: 433px;*/
+    float: left;
+    padding-left: 40px;
+}
+#slider{
+    width: auto;
+    float: right;
+    position: absolute;
+    top: 42px;
+    right: 49px;
+}
+
+
+#banner{
+    /*width: 298px;*/
+    float: right;
+    margin-top: 12px;
+}
+#featureOfTheHotel{
+    clear: both;
+    padding-top: 35px;
+
+}
+.Title{
+    clear: both;
+    width: auto;
+    float: left;
+    margin: 0px 25px 35px 0px;
+}
+#line1{
+    width: 721px;
+    border-color: #d8b45f;
+    border-width: 2px;
+    margin-top: 22px;
+}
+#hotelImages{
+    text-align: center;
+    width: 100%;
+    height: 496px;
+    background-image: url(../images/hotelImgLeft.png), url(../images/hotelImgRight.png);
+    background-position: left top, right top;
+    background-size: 218px 475px, 218px 475px;
+    background-repeat: no-repeat;
+}
+#featureOfTheHotel_text{
+    clear: both;
+    width: 700px;
+    float: left;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    text-align: left;
+
+}
+#TrafficInfo{
+    clear: both;
+    height: 20px;
+    float: right;
+    font-size: 14px;
+}
+#TrafficInfo p{
+    float: left;
+    color: #ae9364;
+    margin-right: 10px;
+    background: url(../images/rightArrow.png) right center no-repeat;
+    background-size: 8px 11px;
+    padding-right: 20px;
+}
+/*#TrafficInfo img{
+    padding-top: 4.9px;
+}*/
+
+#guestRooms{
+    clear: both;
+    padding-top: 35px;
+}
+#line2{
+    width: 823px;
+    border-color: #d8b45f;
+    border-width: 2px;
+    margin-top: 24px;
+}
+
+#guestRooms_images{
+    clear: both;
+    height: 381px;
+    background: url(../images/guestRoomright.png) right top no-repeat;
+    text-align: left;
+}
+#guestRooms_text{
+    clear: both;
+    width: 700px;
+    float: left;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+#guestRoomsInfo{
+    clear: both;
+    width: 234px;
+    height: 20px;
+    float: right;
+    font-size: 14px;
+}
+#guestRoomsInfo p{
+    float: right;
+    padding-right: 20px;
+    color: #ae9364;
+    background: url(../images/rightArrow.png) right center no-repeat;
+    background-size: 8px 11px;
+}
+#guestRoomsInfo img{
+    padding-top: 4.9px;
+    padding-right: 50px;
+}
+
+#restaurant{
+    clear: both;
+    padding-top: 35px;
+}
+#line3{
+    width: 840px;
+    border-color: #d8b45f;
+    border-width: 2px;
+    margin-top: 24px;
+}
+#restaurant_text{
+    clear: both;
+    width: 700px;
+    float: left;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+#restaurantInfo{
+    clear: both;
+    width: 234px;
+    height: 20px;
+    float: right;
+    font-size: 14px;
+}
+#restaurantInfo p{
+    float: right;
+    color: #ae9364;
+    background: url(../images/rightArrow.png) right center no-repeat;
+    background-size: 8px 11px;
+    padding-right: 20px;
+}
+#restaurantInfo img{
+    padding-top: 4.9px;
+    padding-right: 50px;
+}
+
+#plans{
+    clear: both;
+    padding-top: 35px;
+}
+#line4{
+    width: 880px;
+    border-color: #d8b45f;
+    border-width: 2px;
+    margin-top: 24px;
+}
+#plans_text{
+    clear: both;
+    width: 700px;
+    float: left;
+    font-size: 14px;
+    line-height: 2;
+    /*margin-top: 30px;*/
+    margin-bottom: 24px;
+    text-align: left;
+}
+#plansInfo{
+    clear: both;
+    width: 120px;
+    height: 20px;
+    float: right;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+#plansInfo p{
+    float: left;
+    color: #ae9364;
+    background: url(../images/rightArrow.png) right center no-repeat;
+    background-size: 8px 11px;
+    padding-right: 20px;
+}
+#plansInfo img{
+    padding-top: 5px;
+}
+
+#plansSummary{
+    clear: both;
+    width: 990px;
+    height: 1025px;
+    background-color: #ebebeb;
+    padding: 23px 0px 0px 23px;
+    margin-bottom: 92px;
+}
+.plans_Detail{
+    width: 472px;
+    float: left;
+    padding-right: 23px;
+    margin-bottom: 23px;
+    position: relative;  /* 親ボックス */
+}
+.plans_DetailInfo{
+    clear: both;
+    width: 87px;
+    height: 15px;
+    float: right;
+    font-size: 14px;
+    position: absolute;  /* 親ボックス内の移動 */
+    top: 285px;
+    left: 360px;
+}
+.plans_DetailInfo p{
+    float: left;
+    color: #d12d2d;
+}
+.plans_DetailInfo img{
+    float: right;
+    padding-top: 4px;
+}
+
+
+#backToPageTop{
+    clear: both;
+    font-size: 14px;
+    color: #ae9364;
+    margin-bottom: 23px;
+}
+#backToPageTop img{
+    float: right;
+    margin-right: 35px;
+}
+#backToPageTop p{
+    clear: both;
+    margin-top: 10px;
+    float: right;
+}
+
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: #121212;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+#adress{
+    width: 334px;
+    float: left;
+    margin-top: 73px;
+    text-align: left;
+}
+#adress p{
+    padding-bottom: 5px;
+}
+#hotelname{
+    color: #c0a055;
+}
+
+#footer_nav{
+    width: 234px;
+    float: left;
+    text-align: left;
+    margin-top: 55px;
+}
+#footer_nav p{
+    padding-bottom: 5px;
+    /*font-weight: bold;*/
+}
+
+#company{
+    width: 277px;
+    float: left;
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+#company p{
+    padding-bottom: 5px;
+    /*font-weight: bold;*/
+}
+
+#footer_Right{
+    width: 130px;
+    float: right;
+    text-align: left;
+    margin-top: 90px;
+}
+#footer_Right img{
+    margin-top: 23px;
+}
+
+#copyRight{
+    clear: both;
+    width: 1014px;
+    height: 50px;
+    font-size: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #b2b2b2;
+}
+#copyRight p{
+    float: left;
+}
+
+
+input.withicon{
+    background-image: url("../images/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}

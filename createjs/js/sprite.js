@@ -7,10 +7,6 @@ var manifest = [
 
 
 
-
-
-
-
 // DOMを読み込んだら
 $(function(){
 
@@ -68,7 +64,7 @@ $(function(){
         function ironStand(){
             iron.gotoAndPlay('stand');
         }
-
+        //------------------------------------------------------------
 
 
 
